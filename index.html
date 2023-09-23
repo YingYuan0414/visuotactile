@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Robot Synesthesia">
+  <meta name="author"
+    content="Ying Yuan, Haichuan Che, Yuzhe Qin, Binghao Huang, Zhao-Heng Yin, Kang-Won Lee, Yi Wu, Soo-Chul Lim, Xiaolong Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robot Synesthesia</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Robot Synesthesia: <br> In-Hand Manipulation with Visuotactile Sensing</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://yingyuan0414.github.io/">Ying Yuan</a><sup>*,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/haichuan-che-7338721b1/">Haichuan Che</a><sup>*,1</sup>,</span>  
+              <span class="author-block">
+                <a href="https://yzqin.github.io/">Yuzhe Qin</a><sup>*,1</sup>,</span><br>  
+              <span class="author-block">
+                <a href="https://binghao-huang.github.io/">Binghao Huang</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://zhaohengyin.github.io/">Zhao-Heng Yin</a><sup>4</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=OqqaNNkAAAAJ&hl=ko">Kang-Won Lee</a><sup>5</sup>,</span> 
+              <span class="author-block">
+                <a href="https://jxwuyi.weebly.com/">Yi Wu</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="http://irobot.dgu.edu/wordpress/member/professor/">Soo-Chul Lim</a><sup>5</sup>,</span>  
+              <span class="author-block">
+                <a href="https://xiaolonw.github.io/">Xiaolong Wang</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>UC San Diego,</span>
+              <span class="author-block"><sup>2</sup>Tsinghua University</span>
+              <span class="author-block"><sup>3</sup>University of Illinois Urbana-Champaign</span>
+              <span class="author-block"><sup>4</sup>UC Berkeley</span>
+              <span class="author-block"><sup>5</sup>Dongguk University</span>
+            </div>
+          </br>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal Contribution</span>
+              <!--</br>-->
+              <!--<span class="author-block">Conference on Robot Learning (CoRL) 2023</span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="static/ICRA24_3333_MS.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!--
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2309.05655" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+            -->
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=o0RESLWG8LE" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!--
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>Twitter</span>
+                  </a>
+                </span>
+            -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="additional comment"> -->
+    <!--
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4">
+            Our Multi-Agent System: high-speed actions, precise collaboration, diverse object interactions!</h2>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <h3 class="title is-4"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+-->
+
+    <section class="overall teaser">
+      <div class="container">
+        <div class="hero-body">
+          <video id="teaser_video" width=99% muted autoplay loop style="border-radius:10px; ">
+            <source src="videos/bc-baoding-small-multimodplus-150-success2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-body">
+          <video id="teaser_video" width=44.5% muted autoplay loop style="border-radius:10px; ">
+            <source src="videos/bc-cross-multimod-500-success5.mp4" type="video/mp4">
+          </video>
+          <video id="teaser_video" width=44.5% muted autoplay loop style="border-radius:10px; ">
+            <source src="videos/dinosaur-bc-no-norm-z-multimodplus-1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Executing contact-rich manipulation tasks necessitates the fusion of tactile and 
+                visual feedback. However, the distinct nature of these modalities poses significant 
+                challenges. In this paper, we introduce a system that leverages visual and tactile 
+                sensory inputs to enable dexterous in-hand manipulation. Specifically, we propose 
+                Robot Synesthesia, a novel point cloud-based tactile representation inspired by human 
+                tactile-visual synesthesia. This approach allows for the simultaneous and seamless 
+                integration of both sensory inputs, offering richer spatial information and 
+                facilitating better reasoning about robot actions. The method, trained in a simulated 
+                environment and then deployed to a real robot, is applicable to various in-hand object 
+                rotation tasks. Comprehensive ablations are performed on how the integration of vision 
+                and touch can improve reinforcement learning and Sim2Real performance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/o0RESLWG8LE?si=nAtHX_x0KNVOc_Zn" frameborder="0"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="videos">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Visualization in the Real World</h2>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-4">Wheel-Wrench Rotation</h2>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <!-- <h2 class="title is-5"> Moving Objects </h2> -->
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="80%" style="border-radius:10px; ">
+                  <source src="videos/bc-cross-multimod-500-success5.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-4">Double-Ball Rotation</h2>
+            </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="80%" style="border-radius:10px; ">
+                  <source src="videos/bc-baoding-small-multimodplus-150-success2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-4">Three-Axis Rotation</h2>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <!-- <h2 class="title is-5"> Terrain </h2> -->
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/bc-no-norm-x-multimodplus-150-success2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/bc-no-norm-y-multimodplus-200.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/bc-no-norm-z-multimodplus-200.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-4">Generalize to Real-life Objects</h2>
+            </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/dinosaur-bc-no-norm-z-multimodplus-1.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <!-- <h2 class="title is-5"> Terrain </h2> -->
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/white_cube_y_multimodplus_rgb_new.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <!-- <h2 class="title is-5"> Terrain </h2> -->
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/timer-bc-no-norm-z-multimodplus-1.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/cup-bc-no-norm-multimodplus-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+  
+            <div class="column">
+              <!-- <h2 class="title is-5"> Terrain </h2> -->
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/can-bc-no-norm-z-multimodplus-200.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+  
+            <div class="column">
+              <!-- <h2 class="title is-5"> Terrain </h2> -->
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/white-cube-bc-no-norm-z-multimodplus-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Comparison with Baselines</h2>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Touch+Cam+Aug+Syn (Ours) </h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="80%" style="border-radius:10px; ">
+                  <source src="videos/bc-cross-multimod-500-success5.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Non-Visual RL </h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/cross/ps-cross.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> Touch </h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/cross/bc-cross-no-pc-400.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Cam+Aug </h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/cross/bc-cross-no-tactile-400.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> Touch+Cam+Aug </h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/cross/bc-cross-aug-300.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <br>
+        <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Visualization of Point Cloud in Testing</h2></h2> 
+          </div>
+        </div>
+  
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/can_pointcloud_rgb.MP4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="videos/can_z_rgb_new.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3">Visualization in Simulation</h2>
+            </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/cross_sim.mov" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+    
+            <div class="column">
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/ball_sim.mov" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/x_sim.mov" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+    
+            <div class="column">
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/y_sim.mov" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                    <source src="videos/z_sim.mov" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
